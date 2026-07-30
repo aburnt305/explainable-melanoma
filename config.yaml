@@ -14,14 +14,14 @@ data:
 
 # Model Configuration
 model:
-  backbone: "efficientnet_v2_m"  # Options: efficientnet_v2_s, efficientnet_v2_m, efficientnet_v2_l
+  backbone: "efficientnet_v2_s"  # Options: efficientnet_v2_s, efficientnet_v2_m, efficientnet_v2_l
   pretrained: true
   dropout_rate: 0.3
 
 # Training Configuration
 training:
-  batch_size: 32  # Increase to maximize GPU memory usage
-  epochs: 100
+  batch_size: 16  # Increase to maximize GPU memory usage
+  epochs: 150
   learning_rate: 0.0001
   weight_decay: 0.0001
   optimizer: "adam"
